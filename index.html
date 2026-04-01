@@ -1,0 +1,75 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TutorIA - AI Feedback Platform</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              palette: {
+                dark: '#62676B',
+                grey: '#A5A5A5',
+                beige: '#DBC9BB',
+                lightBeige: '#D9CDBD',
+                cream: '#E5E3D6',
+              }
+            }
+          }
+        }
+      }
+    </script>
+    <style>
+      body {
+        font-family: 'Inter', sans-serif;
+        background-color: #E5E3D6; /* cream background */
+        color: #62676B; /* dark grey text */
+      }
+      .custom-shadow {
+        box-shadow: 0 10px 25px -5px rgba(98, 103, 107, 0.1), 0 8px 10px -6px rgba(98, 103, 107, 0.1);
+      }
+      .card-gradient {
+        background: linear-gradient(135deg, #ffffff 0%, #D9CDBD 100%);
+      }
+      .ai-border {
+        border-left: 4px solid #62676B;
+      }
+      .step-line {
+        height: 2px;
+        flex-grow: 1;
+        background-color: #A5A5A5;
+      }
+      .step-line.active {
+        background-color: #62676B;
+      }
+      .no-scrollbar::-webkit-scrollbar {
+        display: none;
+      }
+      .no-scrollbar {
+        -ms-overflow-style: none;
+        scrollbar-width: none;
+      }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "react/": "https://esm.sh/react@^19.2.4/",
+    "react": "https://esm.sh/react@^19.2.4",
+    "@google/genai": "https://esm.sh/@google/genai@^1.39.0",
+    "recharts": "https://esm.sh/recharts@^3.7.0",
+    "react-dom/": "https://esm.sh/react-dom@^19.2.4/"
+  }
+}
+</script>
+<link rel="stylesheet" href="/index.css">
+</head>
+  <body>
+    <div id="root"></div>
+  <script type="module" src="/index.tsx"></script>
+</body>
+</html>

@@ -1,0 +1,8 @@
+{
+  "name": "TutorIA - AI-Driven Feedback Platform",
+  "description": "A production-ready learning analytics tool that empowers instructors with AI-assisted feedback and tag recommendations for open-ended student assessments.",
+  "requestFramePermissions": [
+    "camera",
+    "microphone"
+  ]
+}
